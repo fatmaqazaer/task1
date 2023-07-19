@@ -1,0 +1,14 @@
+.single-box {
+    .txt{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+ .list{
+    @extend txt;
+    list-style: none;
+    padding: 0;
+    line-height: normal;
+
+}
+}

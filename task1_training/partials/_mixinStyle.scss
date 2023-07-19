@@ -1,0 +1,36 @@
+.first_section{
+    .container{
+        .row{
+            .col-lg-6{
+                .content{
+                    @mixin paddButon($paddBut1, $paddBut2) {
+                        padding: $paddBut1 $paddBut2;
+                        border: none;
+                        border-radius: 20px;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                    .but1{
+                        @include paddButon(5px ,25px);
+                        background-color: var(--Viole_color);
+                        color: var(--white-color);
+                    }
+
+                    .but2 {
+                        @include paddButon(5px, 20px);
+                        background-color:var(--white-color);
+                        color: var(--Viole_color);
+                    }
+                    .but1:hover {
+                        background: var(--white-color);
+                        color: var(--Viole_color);
+                    }
+                    .but2:hover {
+                        color: var(--white-color);
+                        background-color: var(--Viole_color);
+                    }
+                }
+            }
+        }
+    }
+}
